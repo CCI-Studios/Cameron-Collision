@@ -1,0 +1,19 @@
+name=Cameron Collision
+description= A custom theme for Cameron Collision
+core=7.x
+
+; css
+stylesheets[all][]=assets/css/screen.css
+
+scripts[] = js/services.js
+
+; Regions
+regions[header] = Header
+regions[banner] = banner
+regions[black1] = Black Content 1
+regions[red1] = Red Content 1
+regions[black2] = Black Content 2
+regions[red2] = Red Content 2
+
+regions[footer1] = Footer 1
+regions[footer2] = Footer 2
