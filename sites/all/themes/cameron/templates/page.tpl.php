@@ -76,34 +76,21 @@
   <div id="page-wrapper"><div><div>
 
     <div id="header"><div><div>
-
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+  <div id="logo">
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
         <img src="/sites/all/themes/cameron/assets/images/logo.png" alt="Cameron Collision" />
       </a>
-
-  <div id="header_right">
-    <div id="header_info">
-      <div id="top_phone">(519) 876-3533&nbsp;&nbsp;&nbsp;&nbsp;</div><div id="top_address"><a href="/contact-us" style="color:#cccccc">556 Bond St. Watford,ON</a></div>&nbsp;&nbsp;&nbsp;&nbsp;<div><a href="https://www.facebook.com/pages/Cameron-Collision/266800656790290">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/fb_h.png"></a>
-       <br>
-       <br>
-       <br>
-       <br>
-
-      <?php if($main_menu): ?>
-        <nav id="main-menu">
-          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('menu', 'links', 'inline', 'clearfix')))); ?>
-   </nav>
-<?php endif; ?></div>
-   </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-
   </div>
+  <div id="header_right">
+    
+   <div id="menu">
+       <?php print render($page['header']); ?> 
 
+   </div>
+
+   </div>
+ 
+  </div>
     </div></div></div> <!-- /#header -->
 
     <div id="main-wrapper"><div><div>
@@ -115,11 +102,12 @@
       <div id="black1"><div><div>
         <?php print render($title_prefix); ?>
         <?php print render($title_suffix); ?>
-        <?php print $messages; ?>
-        
+        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+        <?php print $messages; ?>  
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php print render($page['black1']); ?>
+
       </div></div></div> <!-- /#black1 -->
 
   <?php if ($page['red1']){?>
@@ -139,11 +127,13 @@
 
 
     <div id="footer1"><div><div>
+        <div class="arrow-left"></div>
       <?php print render($page['footer1']); ?>
+      <div class="arrow-right"></div>
     </div></div></div> <!-- /#footer1 -->
 
     <div id="footer2"><div><div>
-      <?//php print render($page['footer2']); ?>
+      
       <div id="footer_container">
                           <div id="left_bottom_footer" >
                                 <img src="/sites/all/themes/cameron/assets/images/footer_logo.png">
@@ -151,25 +141,25 @@
                           </div>
                                         
                            <div id="middle_bottom_footer">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/aqua.png">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/I-car.png">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/I-car-platinum.png">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/aud.png">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/cfib.png">
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 <img src="/sites/all/themes/cameron/assets/images/aqua.png">
+                                <img src="/sites/all/themes/cameron/assets/images/I-car.png">
+                                <img src="/sites/all/themes/cameron/assets/images/I-car-platinum.png">
+                                <img src="/sites/all/themes/cameron/assets/images/aud.png">
+                                <img src="/sites/all/themes/cameron/assets/images/cfib.png">
+                                <img src="/sites/all/themes/cameron/assets/images/ciia.png">
                          </div>
                 <div id="right_bottom_footer">
-                                    <img src="/sites/all/themes/cameron/assets/images/Phone.png"><br>
-                                   <img src="/sites/all/themes/cameron/assets/images/addr.png">&nbsp;&nbsp;&nbsp;&nbsp;<img src="/sites/all/themes/cameron/assets/images/fb.png">
-                                    <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="sites/all/themes/cameron/assets/images/master.png">
-                                    &nbsp;&nbsp;&nbsp;
+                                    <?php print render($page['footer2']); ?>
+                                     <div id="fb_logo">
+                                    <a href="https://www.facebook.com/pages/Cameron-Collision/266800656790290" target="_blank"><img src="sites/all/themes/cameron/assets/images/fb_h.png"></a>
+                                  
+                                  </div>
+                                    <div id="payment_logo">
+                                    <img src="sites/all/themes/cameron/assets/images/master.png">
                                     <img src="/sites/all/themes/cameron/assets/images/visa.png">
-                                    &nbsp;
                                     <img src="/sites/all/themes/cameron/assets/images/Interac.png">
-                                    &nbsp;&nbsp;&nbsp;
-                          </div>
+                                  </div>
+                                  </div>
                          
       <div id="site-by-cci">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
     </div></div></div> <!-- /#footer -->

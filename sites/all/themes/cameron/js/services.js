@@ -3,6 +3,7 @@
 		
 		$(".read-more a").click(toggleReadMore);
 		$(".read-less a").click(toggleReadMore);
+		$("#block-views-list-view-block-body .service-title").click(toggleReadMore);
 	 
 	});
 
@@ -10,7 +11,6 @@
     function dis()
 	{ 
          
-         //$(this).parents(".views-row").find(".read-more a").slideRight();
         $(this).parents(".views-row").find(".read-more a").toggleClass("display");
          return false;
 
@@ -37,6 +37,7 @@
 
 		return false;
 	}
+
 
 })(jQuery);
 

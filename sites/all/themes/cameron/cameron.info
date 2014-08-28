@@ -6,6 +6,9 @@ core=7.x
 stylesheets[all][]=assets/css/screen.css
 
 scripts[] = js/services.js
+scripts[] = js/menu-btn.js
+scripts[] = js/image-scroller.js
+scripts[] = js/service_image_scroller.js
 
 ; Regions
 regions[header] = Header
