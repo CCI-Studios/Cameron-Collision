@@ -1039,11 +1039,10 @@ img{
        }
     
    }
-  /*  .view-service-images-view .service_image
-   {
-      width: 45%;
-      margin: 0 25%;
-   } */
+  #block-views-team-view-block-1 div .views-row-odd div .team_body
+  {
+    box-shadow:none;
+  }
 
    
 }
@@ -1224,30 +1223,32 @@ img{
 
   div
   {
-    display: block;
+    
     text-align: center;
    }
    #block-block-41
   {  
     text-align: center;
-    padding-left:24%;
-    width: 257px;
+    //padding-left:24%;
+    width: 100%;
     p
     {
-      padding-right: 32%;
+      padding-right: 34%;
       text-align: right;
     }
   }
   #fb_logo
   {
-    text-align: right;
-    padding-right: 34px;
-    left: 0;
+   padding-left: 64%;
+   width: 20%;
+   left: 0;
+   right:0;
   }
   #payment_logo 
   {
     margin-top: -37px;
-    margin-left: 46%;
+    margin-left: 23%;
+    left: 0;
    }
 }
   
@@ -1270,10 +1271,10 @@ img{
   }
   #right_bottom_footer 
   {
-      float:left;
       padding-left:0px;
       height: 101px;
       border-left: 0;
+      display: inline
   
   }
   f
@@ -1395,21 +1396,19 @@ img{
             }
           position: relative;
           top: -36px;
-          margin-bottom: -36px;
+          margin-bottom: -49px;
           left: -46%;
           width: 146%;
-          height: 375px;
+          height: auto;
 
       }
 
      #block-block-6{
       width: 100%;
-      height: 316px;
+      height: auto;
       background-image:url("../images/mobile_red_back1.png");
       background-repeat:no-repeat;
-      border-bottom:0px;
       background-size:85%;
-
       h2
       {
          margin-left: 27%;
@@ -1421,6 +1420,7 @@ img{
           .content
         {
           margin-left: -9%;
+          padding-bottom:0px;
         }
      }
 
@@ -1448,6 +1448,7 @@ img{
           .content
           {
             margin-left: 36px;
+            width: 100%;
           }
       }
         #block-block-34
