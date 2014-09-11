@@ -136,17 +136,17 @@
       
       <div id="footer_container">
                           <div id="left_bottom_footer" >
-                                <img src="/sites/all/themes/cameron/assets/images/footer_logo.png">
+                                <a href="/"><img src="/sites/all/themes/cameron/assets/images/footer_logo.png"></a>
                                 <br>
                           </div>
                                         
                            <div id="middle_bottom_footer">
-                                 <img src="/sites/all/themes/cameron/assets/images/aqua.png">
-                                <img src="/sites/all/themes/cameron/assets/images/I-car.png">
-                                <img src="/sites/all/themes/cameron/assets/images/I-car-platinum.png">
-                                <img src="/sites/all/themes/cameron/assets/images/aud.png">
-                                <img src="/sites/all/themes/cameron/assets/images/cfib.png">
-                                <img src="/sites/all/themes/cameron/assets/images/ciia.png">
+                                <div><img src="/sites/all/themes/cameron/assets/images/aqua.png"></div>
+                                <div><img src="/sites/all/themes/cameron/assets/images/I-car.png"></div>
+                                <div><img src="/sites/all/themes/cameron/assets/images/I-car-platinum.png"></div>
+                                <div><img src="/sites/all/themes/cameron/assets/images/aud.png"></div>
+                                <div><img src="/sites/all/themes/cameron/assets/images/cfib.png"></div>
+                                <div><img src="/sites/all/themes/cameron/assets/images/ciia.png"></div>
                          </div>
                 <div id="right_bottom_footer">
                                     <?php print render($page['footer2']); ?>
@@ -157,7 +157,6 @@
                                     <div id="payment_logo">
                                     <img src="sites/all/themes/cameron/assets/images/master.png">
                                     <img src="/sites/all/themes/cameron/assets/images/visa.png">
-                                    <img src="/sites/all/themes/cameron/assets/images/Interac.png">
                                   </div>
                                   </div>
                          

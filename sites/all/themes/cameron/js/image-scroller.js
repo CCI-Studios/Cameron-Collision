@@ -28,7 +28,7 @@
 
 	function start()
 	{
-		timer = setInterval(timerNext, 5000);
+		timer = setInterval(timerNext, 2000);
 	}
 
 	function container()

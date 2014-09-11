@@ -3,25 +3,80 @@
     color: white;
     line-height: 1;
     background:url("../images/pavement.jpg");
-
+    font-family: "futura-pt",sans-serif;
+    font-weight:700;
+     div .status
+        {
+        display: none;
+        }
+     
   }
 
+  .page-node-115
+ {
+  #black2
+  {
+    border-bottom:0;
+  }
+ }
+ .page-node-63
+ {
+  #red1,#black2
+  {
+    border-bottom:0;
+  }
+ }
+ .page-node-10
+ {
+  #red2
+  {
+    border-bottom:0;
+  }
+ }
+ .page-node-17
+ {
+   #black2
+  {
+    border-bottom:0;
+  }
+ }
+ .page-node-5
+ {
+  #red2,#black2
+  {
+    border-bottom:0;
+  }
+ }
+p
+{
+ font-size:18px;
+}
+ .not-logged-in
+    {
+      &.messages
+       {
+     
+       }
+    }
 
 h2
 {
   color:$gold;
-  font-size:1.5em;
+  font-size:36px;
+  
 }
 h3
 {
-  font-size:1em;
+  font-size:28px;
+  color:$gold;
+}
+h4
+{
+  font-size:20px;
   color:#bd1818;
 }
-ul
-{
-  margin-left:13%;
-}
-  
+
+
   #banner,
   #black1,
   #black2,
@@ -103,11 +158,24 @@ ul
               position: relative;
               height: auto;
 
-            .read-more,
-            .read-less
+            .read-more
             {  
               position: absolute;
               display: inline;
+
+              a
+              {
+                display: none;
+              }
+            }
+             span{
+            .read-less
+            {  
+            
+              position: absolute;
+              display: inline;
+              padding:0;
+            }
 
               a
               {
@@ -132,7 +200,11 @@ ul
               {
                 color:white;
                 font-size:24px;
-              
+               
+              }
+              .body-content
+              {
+                cursor: pointer;
               }
         
            &:hover .read-more a.body-content
@@ -160,6 +232,8 @@ ul
     border-bottom: 4px solid $gold;
     height:158px;
     padding-top: 20px;
+    padding-bottom: 20px;
+
 
     &>div{
       max-width: 1220px;
@@ -173,6 +247,10 @@ ul
     vertical-align: middle;
     width: 30%;
     margin-left: 20px;
+    img
+    {
+      width: 100%;
+    }
   }
 
   #header_right
@@ -180,19 +258,23 @@ ul
      display: inline-block;
      color: #b98537;
      vertical-align: middle;       
-     div
-     {
-      margin:0 auto;
-     }
+     width: 68%;
+     
 
   }
    #menu
    {
-    width: 700px;
+    width: 100%;
     a{
         color: $gold;
      }
+     li.first.leaf
+     {
+     
+      display: none;
+    
    }
+ }
   #header_info
   {
      margin-bottom: 7%;
@@ -232,7 +314,6 @@ ul
     background-image: url("../images/vehicle_repair.png");
     height: 141px;
     border: 0;
-    border-top: 4px solid #b98537;
     padding-top: 60px;
     clear: both;
     background-position-x: 50%;
@@ -276,6 +357,12 @@ ul
 
   #middle_bottom_footer 
   {
+    &>div
+    {
+      display: inline-block;
+     
+    }
+    
      float:none;
      display: inline-block;
      position: relative;  
@@ -336,7 +423,9 @@ ul
       margin: 0 auto;
       height: auto;
       border-top: 4px solid $gold;
+       border-bottom: 4px solid $gold;
       overflow: hidden;
+      background:$red;
 
   }
 
@@ -345,6 +434,7 @@ ul
       height: auto;
       position: relative;
       overflow: hidden;
+      border-bottom: 4px solid $gold;
 
   }
 
@@ -353,6 +443,9 @@ ul
     height: auto;
     overflow: hidden;
     position:relative; 
+    background:$red;
+     border-bottom: 4px solid $gold;
+
     
    }
 
@@ -370,10 +463,11 @@ ul
 
       .views-field-title
      {
-          font-size: 42px;
+          font-size: 36px;
           text-align: center;
           width: 100%;
           line-height: 64px;
+
 
         
      }
@@ -382,7 +476,7 @@ ul
      {
           width: 55%;
           height: auto;
-          transform: skewX(-10deg);
+          -webkit-transform: skewX(-10deg);
           z-index: 46;
           float: left;
           left: -60px;
@@ -392,9 +486,14 @@ ul
 
          &:hover .views-field-title a
           {
+
           text-decoration: none;
           color: white;
           }
+          .views-field-title
+          {
+          -webkit-transform: skewX(10deg);
+            }
           .views-field-field-image
           {
             box-shadow: -2px 0px 20px black;
@@ -406,7 +505,7 @@ ul
                         
           img
           {
-            transform: skewX(10deg);
+            -webkit-transform: skewX(10deg);
             margin-right: 53px;
             width: 100%;
             height: auto;
@@ -464,14 +563,15 @@ ul
 
 .view-gallery-page
    {
-      padding: 0 122px;
+      padding-left: 75px;
       background-color: #bd1818;
       border-top: 3px solid #b98537;
-      width: 979px;
+      width:100%;
+      
 
       div .views-row
      {
-      float: left;
+      display: inline-block;
       margin:30px;
      }
         img
@@ -546,7 +646,7 @@ ul
 
    .service_image
     {
-        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
         width: 433px;
         overflow: hidden;
         -webkit-box-shadow:2px 0px 20px black;
@@ -563,7 +663,7 @@ ul
        }
         
      img{
-          transform: skewX(10DEG);
+          -webkit-transform: skewX(10DEG);
           margin-left: -82px;
           width: 565px;
           height: auto;
@@ -594,20 +694,13 @@ ul
       max-height: auto;
 
       }
-     p
-      {
-        font-size: 18px;
-        padding-bottom: 20px
-      }
+    
 
        img{
         padding-top: 40px;
         padding-bottom: 40px;
        }
-      h1{
-        font-size: 32px;
-        color: $gold;
-      }
+     
 
       ul{
         padding-bottom: 20px;
@@ -629,13 +722,19 @@ ul
 {
   position: absolute;
   right: 7%;
-  top: 38%;
+  top: 59%;
+  img
+  {
+    height: 32px;
+  }
 
 }
 
 #payment_logo{
-  padding-left:95px;
-
+  padding-left: 110px;
+margin-bottom: -6px;
+vertical-align: bottom;
+line-height: 54px;
 }
 
 .view-header
@@ -671,15 +770,12 @@ ul
  .title
    {
       color:$gold;
-      font-size: 32px;
       padding-left: 150px;
       padding-top: 40px;
    }
    .subtitle
    {
       color:$red;
-      font-size: 18px;
-      font-weight: bold;
    }
 
    .jcarousel-skin-default .jcarousel-item
@@ -687,7 +783,7 @@ ul
     height: auto;
    }
 
-   .place-card-medium
+   #node-53
    {
-    display: none;
+    background: none;
    }

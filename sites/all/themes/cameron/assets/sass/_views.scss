@@ -6,8 +6,7 @@
 		width:100%;
 		overflow:hidden;
 		font-weight:600;
-		padding-top:32px;
-		line-height: 100px;
+		line-height: 135px;
 
 		.view-content
 		{
@@ -24,7 +23,7 @@
 	}
 	#prev
 	{
-		left:1.5%;
+		
 	}
 	#next
 	{
@@ -56,6 +55,12 @@
 				z-index:0;
 				width:100%;
 				height:auto;
+
+			}
+			.views-field-field-image-scroll img
+			{
+				vertical-align: middle;
+				height: 50%;
 			}
 		.views-field-title
 			 {
@@ -123,11 +128,11 @@
 	}
 	#prev-service
 	{
-		left:1.5%;
+		left:13px;
 	}
 	#next-service
 	{
-		right:0;
+		right:10px;
 	}
          
 

@@ -46,10 +46,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="<?php print $language->language; ?>" dir="<?php print $language->dir; ?>">
 <head>
   <?php print $head; ?>
-  <meta name="viewport" content="width=device-width, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1">
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <script src="//use.typekit.net/nqg8xut.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
