@@ -1459,7 +1459,7 @@ img
     h2{
       margin:0;
       text-align: center;
-    font-size: 42px;
+   
     padding-top:10px;
     padding-bottom:5px;
     -webkit-transform: none;
@@ -2353,6 +2353,7 @@ background-size: 71%;
     text-align: center;
     padding-top: 25px;
     margin-bottom: 20px;
+    padding-right:0;
 
 }
 
@@ -2900,6 +2901,11 @@ background-size: 71%;
       transform: none;
 
     } 
+  }
+  #block-block-28 .content
+  {
+    width: 100%;
+    padding-left:0;
   }
       
   }

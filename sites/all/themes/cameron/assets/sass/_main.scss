@@ -67,7 +67,7 @@ h2
 }
 h3
 {
-  font-size:28px;
+  font-size:26px;
   color:$gold;
 }
 h4
@@ -129,6 +129,7 @@ h4
   a:hover {
       text-decoration: none;
       color:$gold;
+
   }
 
   li a.active
@@ -407,6 +408,7 @@ h4
     clear:left;
     font-family: sans-serif;
     text-align: center;
+    padding-right: 84px;
   
   }
 
@@ -453,9 +455,7 @@ h4
 {
      div .views-row
      {
-     
-     
-      float: left;
+      display: inline-block;
      }
   img{
 
@@ -481,7 +481,7 @@ h4
           float: left;
           left: -60px;
           position: relative;
-          margin-bottom: 23px;
+          
           -webkit-backface-visibility: hidden;
 
          &:hover .views-field-title a
@@ -521,10 +521,10 @@ h4
      {
         width: 55%;
         height: auto;
-        left: 45%;
+        margin-left:-122px;
         z-index: 1;
         margin-bottom: 66px;
-        position: absolute;
+        position: relative;
         img
         {
             width: 100%;
@@ -694,7 +694,10 @@ h4
       max-height: auto;
 
       }
-    
+    a:hover
+    {
+      border-bottom:2px solid $gold;
+    }
 
        img{
         padding-top: 40px;
@@ -722,7 +725,7 @@ h4
 {
   position: absolute;
   right: 7%;
-  top: 59%;
+  top: 68%;
   img
   {
     height: 32px;
