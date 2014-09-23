@@ -1,790 +1,367 @@
+body
+{
+	color: white;
+	background:url("../images/pavement.jpg") repeat;
+	font-family: "futura-pt",sans-serif;
+	font-weight:700;
+	line-height: 1;
+}
 
-  body {  
-    color: white;
-    line-height: 1;
-    background:url("../images/pavement.jpg");
-    font-family: "futura-pt",sans-serif;
-    font-weight:700;
-     div .status
-        {
-        display: none;
-        }
-     
-  }
-
-  .page-node-115
- {
-  #black2
-  {
-    border-bottom:0;
-  }
- }
- .page-node-63
- {
-  #red1,#black2
-  {
-    border-bottom:0;
-  }
- }
- .page-node-10
- {
-  #red2
-  {
-    border-bottom:0;
-  }
- }
- .page-node-17
- {
-   #black2
-  {
-    border-bottom:0;
-  }
- }
- .page-node-5
- {
-  #red2,#black2
-  {
-    border-bottom:0;
-  }
- }
 p
 {
- font-size:18px;
+	font-size:18px;
 }
- .not-logged-in
-    {
-      &.messages
-       {
-     
-       }
-    }
 
 h2
 {
-  color:$gold;
-  font-size:36px;
-  
+	color:$gold;
+	font-size:36px;
 }
 h3
 {
-  font-size:26px;
-  color:$gold;
+	font-size:26px;
+	color:$gold;
 }
 h4
 {
-  font-size:20px;
-  color:#bd1818;
+	font-size:20px;
+	color:$red;
 }
 
 
-  #banner,
-  #black1,
-  #black2,
-  #red1,
-  #red2
-  
-  {
-    
-      max-width: 1220px;
-      width:100%;
-      margin: 0 auto;
-      position: relative;
-    
-  }
- 
-  #top_phone
-  {
-  font-size:35px;
-  font-weight:bold;
- 
-  }
-  
-  #top_address
-  {
-    
-    font-size:20px;
-    font-weight:bold;
-    color:#cccccc;
-    text-decoration:none;
-  }
-  a:active{
 
-    height: 100%;
-    width: 100%;
-  	
-  }
-  a:link{
-  	color:$gold;
-  }
-  a:link {
-      text-decoration: none;
-      color:$gold;
-  }
+a,
+a:visited
+{
+	text-decoration: none;
+	color:$gold;
+}
 
-  a:visited {
-      text-decoration: none;
-      color:$gold;
-  }
-
-  a:hover {
-      text-decoration: none;
-      color:$gold;
-
-  }
-
-  li a.active
-  {
-     color:$gold;
-  }
+.not-logged-in
+{
+	.status
+	{
+		display: none;
+	}
+}
 
 
-  a:active {
-      text-decoration: none;
-      color:$gold;
-  }  
+.page-node-115 #black2,
+.page-node-63 #red1,
+.page-node-63 #black2,
+.page-node-10 #red2,
+.page-node-17 #black2,
+.page-node-5  #red2,
+.page-node-5  #black2
+{
+	border-bottom:0;
+}
 
+.layout-center
+{
+	max-width: 1220px;
+	width:100%;
+	margin: 0 auto;
+}
 
-  
-    .read-more a
-      {
-        display:none;
-      }
+#banner,
+#black1,
+#black2,
+#red1,
+#red2
+{
+	@extend .layout-center;
+	position: relative;
+}
 
-  .view-list-view
-  {
-    overflow: hidden;
-        .views-row
-      {
-              clear: both;
-              position: relative;
-              height: auto;
+#header
+{
+	background-color:black;
+	border-bottom: 4px solid $gold;
+	height:158px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 
-            .read-more
-            {  
-              position: absolute;
-              display: inline;
+	& > div
+	{
+		@extend .layout-center;
+	}
+}
+#logo
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 30%;
+	margin-left: 20px;
 
-              a
-              {
-                display: none;
-              }
-            }
-             span{
-            .read-less
-            {  
-            
-              position: absolute;
-              display: inline;
-              padding:0;
-            }
+	img
+	{
+		width: 100%;
+	}
+}
 
-              a
-              {
-                display: none;
-              }
-            }
+#header_right
+{
+	display: inline-block;
+	color: $gold;
+	vertical-align: middle;       
+	width: 67%;
+}
+#menu
+{
+	width: 100%;
 
-            &.read-more-open
-            {
-              .read-more
-              {
-                display: none;
-              }
-              .read-less a
-              {
-                display: block;
-              }
-            }
+	a
+	{
+		color: $gold;
+	}
 
+	li.first.leaf
+	{
+		display: none;
+	}
+}
+#header_info
+{
+	margin-bottom: 7%;
+	width: 700px;
+	text-align: center;
 
-            .service-title
-              {
-                color:white;
-                font-size:24px;
-               
-              }
-              .body-content
-              {
-                cursor: pointer;
-              }
-        
-           &:hover .read-more a.body-content
-            {
-               display: block;
-            }
+	div
+	{
+		display: inline-block;
+		padding-left: 7%;
+	}
+}
+#banner
+{
+	display:block;
+	height:auto;
+	border-bottom: 4px solid $gold;
 
-            .body-content
-            {
-               color:$gold;
-               font-size:28px;
-               padding-right: 40px;
-               float: left;
-               clear: left;
-              
-            }
-      }
-  }
+	.region-banner
+	{
+		overflow: hidden;
+	}
+}
 
+#black1
+{
+	position: relative;
+	overflow: hidden;
+}
 
+#footer1
+{
+	background-image: url("../images/vehicle_repair.png");
+	height: 141px;
+	padding-top: 60px;
+	clear: both;
+	background-position-x: 50%;
+	background-position-y: 30px;
+	border-bottom: 4px solid $gold;
+	background-repeat: no-repeat;
+	background-color: #d7d7d7;
+	border-top:4px solid $gold;
+	box-shadow: 0px -1px 8px rgba(0,0,0, 0.5) inset;
 
-  #header
-  {
-    background-color:black;
-    border-bottom: 4px solid $gold;
-    height:158px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+	& > div
+	{
+		@extend .layout-center;
+	}
+}
 
+#footer2
+{
+	display:block;
+	height:152px;
+	background: #fefefe; /* Old browsers */
+	background: -moz-linear-gradient(top, #fefefe 0%, #dbdbdb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fefefe 0%,#dbdbdb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
+	border-bottom:4px solid $gold;
 
-    &>div{
-      max-width: 1220px;
-      width: 100%;
-      margin:0 auto;
-    }
-  }
-  #logo
-  {
-    display: inline-block;
-    vertical-align: middle;
-    width: 30%;
-    margin-left: 20px;
-    img
-    {
-      width: 100%;
-    }
-  }
+}
 
-  #header_right
-  {
-     display: inline-block;
-     color: #b98537;
-     vertical-align: middle;       
-     width: 68%;
-     
+#middle_bottom_footer 
+{   
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	margin-bottom: -10px;
+}
 
-  }
-   #menu
-   {
-    width: 100%;
-    a{
-        color: $gold;
-     }
-     li.first.leaf
-     {
-     
-      display: none;
-    
-   }
- }
-  #header_info
-  {
-     margin-bottom: 7%;
-     width: 700px;
-     text-align: center;
-     div{
-        display: inline-block;
-        padding-left: 7%;
-       }
+#left_bottom_footer 
+{
+	display:inline-block;
+	border-right: 2px solid $gold;
+	padding-right: 20px;
+	vertical-align:bottom;
+}
 
-  }
+#footer_container
+{
+	padding-top:20px;
+	text-align: center;
+}
 
-  #banner
-  {
-    display:block;
-    height:auto;
-    border-bottom: 4px solid $gold;
-    .region-banner
-    {
-      overflow: hidden;
-
-    }
-  }
-
-
-  #black1
-  {
-    height:auto;
-    position: relative;
-    overflow: hidden;
-  }
-
-  #footer1
-  {
-
-    display: block;
-    background-image: url("../images/vehicle_repair.png");
-    height: 141px;
-    border: 0;
-    padding-top: 60px;
-    clear: both;
-    background-position-x: 50%;
-    background-position-y: 30px;
-    border-bottom: 4px solid #b98537;
-    background-repeat: no-repeat;
-    background-color: #d7d7d7;
-    box-shadow: 0px -1px 8px inset;
-
-
-    & > div
-    {
-      max-width: 1220px;
-      margin:0 auto;
-      width:100%;
-    }
-  }
-
-  #footer2
-  {
-    display:block;
-    height:152px;
-    background: #fefefe; /* Old browsers */
-    background: -moz-linear-gradient(top, #fefefe 0%, #dbdbdb 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #fefefe 0%,#dbdbdb 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #fefefe 0%,#dbdbdb 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-9 */
-    border-bottom:4px solid $gold;
-
-       & > div
-    {
-      max-width: 1220px;
-      width: 100%;
-      margin:0 auto;
-    }
-
-  }
-
-  #middle_bottom_footer 
-  {
-    &>div
-    {
-      display: inline-block;
-     
-    }
-    
-     float:none;
-     display: inline-block;
-     position: relative;  
-     top:-37px;
-     padding-left:20px;
-     padding-right:20px;
-     img
-     {
-      padding-left:10px;
-     }
-
-  }
-  #right_bottom_footer 
-  {
-       float:none;
-       display: inline-block;
-       border-left: 2px solid $gold;
-       padding-left:3%;
-       position:relative;
-
-  }
-
-  #left_bottom_footer 
-  {
-    float: none;
-    display: inline-block;
-    border-right: 2px solid $gold;
-    padding-right:3%;
-  }
-
-  #footer_container
-  {
-    padding-top:20px;
-    text-align: center;
-    
-  }
-
-  #site-by-cci
-  {
-    font-size: 12px;
-    color:$gold;
-    clear:left;
-    font-family: sans-serif;
-    text-align: center;
-    padding-right: 84px;
-  
-  }
-
-   .jcarousel-container
-   {
-      width: 1000px;
-      height: 102px;
-      padding: 20px 40px;
-      margin: auto;
-    }
+#site-by-cci
+{
+	font-size: 12px;
+	color:$gold;
+	clear:left;
+	font-family: sans-serif;
+	padding-right: 84px;
+}
 
 #red1
-  {
-      margin: 0 auto;
-      height: auto;
-      border-top: 4px solid $gold;
-       border-bottom: 4px solid $gold;
-      overflow: hidden;
-      background:$red;
-
-  }
-
-  #black2
-  {
-      height: auto;
-      position: relative;
-      overflow: hidden;
-      border-bottom: 4px solid $gold;
-
-  }
-
-  #red2
-  {
-    height: auto;
-    overflow: hidden;
-    position:relative; 
-    background:$red;
-     border-bottom: 4px solid $gold;
-
-    
-   }
-
-.view-gallery 
 {
-     div .views-row
-     {
-      display: inline-block;
-     }
-  img{
-
-       }
-
-      .views-field-title
-     {
-          font-size: 36px;
-          text-align: center;
-          width: 100%;
-          line-height: 64px;
-
-
-        
-     }
-
-     div .views-row-odd
-     {
-          width: 55%;
-          height: auto;
-          -webkit-transform: skewX(-10deg);
-          z-index: 46;
-          float: left;
-          left: -60px;
-          position: relative;
-          
-          -webkit-backface-visibility: hidden;
-
-         &:hover .views-field-title a
-          {
-
-          text-decoration: none;
-          color: white;
-          }
-          .views-field-title
-          {
-          -webkit-transform: skewX(10deg);
-            }
-          .views-field-field-image
-          {
-            box-shadow: -2px 0px 20px black;
-          }
-          .field-content
-          {
-            overflow: hidden;
-          }
-                        
-          img
-          {
-            -webkit-transform: skewX(10deg);
-            margin-right: 53px;
-            width: 100%;
-            height: auto;
-            margin-left: 47px;
-            position: relative;
-           -webkit-box-shadow: 10px 0 5px -2px grey;
-            display: block;
-          }
-
-     }
-
-      div .views-row-even
-     {
-        width: 55%;
-        height: auto;
-        margin-left:-122px;
-        z-index: 1;
-        margin-bottom: 66px;
-        position: relative;
-        img
-        {
-            width: 100%;
-            height: auto;
-            z-index: -1;
-        }
-     &:hover .views-field-title a
-          {
-          text-decoration: none;
-          color: white;
-          }
-     }
- }
-
-.view-gallery:after
-{
-          content: ".";
-          display: block;
-          clear:both;
-          visibility: hidden;
-          line-height: 0;
-          height: 0;
+	margin: 0 auto;
+	border-top: 4px solid $gold;
+    border-bottom: 4px solid $gold;
+	overflow: hidden;
+	background:$red;
 }
 
-#block-views-gallery-block
-   {
-       background-color: $red;
-       overflow: hidden;
-       width: 100%;
-      h2
-      {
-        display: none;
-      }
-
-   }
-
-.view-gallery-page
-   {
-      padding-left: 75px;
-      background-color: #bd1818;
-      border-top: 3px solid #b98537;
-      width:100%;
-      
-
-      div .views-row
-     {
-      display: inline-block;
-      margin:30px;
-     }
-        img
-        {
-          border:4px solid black;
-        }
-               
-   }
-.view-gallery-page:after
-   {
-         content: ".";
-        display: block;
-        clear:both;
-        visibility: hidden;
-        line-height: 0;
-        height: 0;
-   }
-
-
-
-.view-service-images-view
+#black2
 {
+	position: relative;
+	overflow: hidden;
+	border-bottom: 4px solid $gold;
+}
 
-     div .jcarousel-container-horizontal 
-       {
-        padding:0px 0px;
-
-       }
-
-       div .jcarousel-next-horizontal
-      {
-         top: 113px;
-         right: -129px;
-         background-image: url("../images/right_arrow.png");
-         background-position: 0px;
-         background-repeat: no-repeat;
-         height: 40px;
-
-        &:hover
-        {
-          background-position:0px;
-          background-image: url("../images/right_arrow.png");
-
-        }
-
-      }
-                
-            
-      div .jcarousel-prev-horizontal
-       {
-          top: 113px;
-          right: 150px;
-          background-image: url("../images/left-arrow.png");
-          background-repeat: no-repeat;
-          background-position: 0px;
-          height: 40px;
-
-           &:hover
-          {
-            background-position:0px;
-            background-image: url("../images/left-arrow.png");
-
-          }
-           
-         }
-  
-  }
-
-.jcarousel-view--service-images-view--block
-
+#red2
 {
+	overflow: hidden;
+	position:relative; 
+	background:$red;
+}
 
-   .service_image
-    {
-        -webkit-transform: skewX(-10deg);
-        width: 433px;
-        overflow: hidden;
-        -webkit-box-shadow:2px 0px 20px black;
-        margin-left: 74px;
-        -webkit-backface-visibility: hidden;
-     }
+.region-red2,
+.region-red1
+	{
+		.block-block
+		{
+			a
+			{
+				color: black;	
+			}
+			a:hover
+			{	
+				text-decoration: underline;
+			}	
+		}
+	}
 
- 
- .jcarousel-item-horizontal 
-      {
-          background:transparent;
-          height: 400px;
+.region-black1,
+.region-black2
+{
+	a:hover
+		{
+			text-decoration: underline;
+		}
+}
 
-       }
-        
-     img{
-          -webkit-transform: skewX(10DEG);
-          margin-left: -82px;
-          width: 565px;
-          height: auto;
-          margin-top: -36px
-     }
-  }
-
-
-
-  .white
-  {
-    color: white;
-
-  }
 .node
 {
-      background: url("../images/car.png"),url("../images/commited.png");
-      background-position: right top, right bottom;
-      background-repeat: no-repeat, no-repeat;
-      width: 100%;
+	background: url("../images/car.png"), url("../images/commited.png");
+	background-position: right top, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	width: 100%;
 
-    .content{
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-bottom: 40px;
-      padding-top: 40px;
-      color: white;
-      max-height: auto;
+	&.node-team-member
+	{
+		background: none;
+		img
+		{
+			width: 50%;
+			height:auto;
+		}
+	}
 
-      }
-    a:hover
-    {
-      border-bottom:2px solid $gold;
-    }
+	.content
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom: 40px;
+		padding-top: 40px;
+		color: white;
+		max-height: auto;
+	}
 
-       img{
-        padding-top: 40px;
-        padding-bottom: 40px;
-       }
-     
-
-      ul{
-        padding-bottom: 20px;
-        margin-left:13%;
-      }
-
-      .field-label{
-        display: none;
-      }
-
+	ul
+	{
+		padding-bottom: 20px;
+		margin-left:13%;
+	}
 }
 
-.block-views h2.title, .block-views h2.title a
-  {
-    color: #b98537;
-  }
+.block-views h2.title,
+.block-views h2.title a
+{
+	color: $gold;
+}
+
+#pay-fb
+{
+	float:right;
+	clear:right;
+}
 
 #fb_logo
-{
-  position: absolute;
-  right: 7%;
-  top: 68%;
-  img
-  {
-    height: 32px;
-  }
+{	
+	float:left;
+	padding-top:5px;
 
+	img
+	{
+		height: 32px;
+	}
 }
 
-#payment_logo{
-  padding-left: 110px;
-
+#payment_logo
+{
+	float:left;
+	padding-right:5px;
+	padding-top:17px;
 }
 
 .view-header
 {  
-  float: left;
-    #prev,#prev-service
-    {
-        background-image: url("../images/left-arrow.png");
-        background-repeat: no-repeat;
-        background-size: 25px;
-        display: block;
-        width:30px;
-        color: transparent;
-        height: 55px;
-    }
+	float: left;
+
+	.prev,
+	#prev-service
+	{
+		background-image: url("../images/left-arrow.png");
+		background-repeat: no-repeat;
+		background-size: 25px;
+		display: block;
+		width:30px;
+		color: transparent;
+		font-size: 0;
+		height: 55px;
+	}
 }
 
 .view-footer
 {
-  float: left;
-    #next,#next-service
-    {
-        background-image: url("../images/right_arrow.png");
-        background-repeat: no-repeat;
-        background-size: 25px;
-        color: transparent;
-        height: 55px;
-        display: block;
-        width:30px;
-    }
+	float: left;
+
+	.next,
+	#next-service
+	{
+		background-image: url("../images/right_arrow.png");
+		background-repeat: no-repeat;
+		background-size: 25px;
+		color: transparent;
+		font-size: 0;
+		height: 55px;
+		display: block;
+		width:30px;
+	}
 }
-
- .title
-   {
-      color:$gold;
-      padding-left: 150px;
-      padding-top: 40px;
-   }
-   .subtitle
-   {
-      color:$red;
-   }
-
-   .jcarousel-skin-default .jcarousel-item
-   {
-    height: auto;
-   }
-
-   #node-53
-   {
-    background: none;
-   }

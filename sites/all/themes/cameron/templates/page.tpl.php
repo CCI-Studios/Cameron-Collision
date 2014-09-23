@@ -73,95 +73,115 @@
  */
 ?>
 
-  <div id="page-wrapper"><div><div>
+<div id="page-wrapper">
+    <div>
+        <div>
+            <div id="header">
+                <div>
+                    <div>
+                        <div id="logo">
+                            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
+                                <img src="/sites/all/themes/cameron/assets/images/logo.png" alt="Cameron Collision" />
+                            </a>
+                        </div>
+                        <div id="header_right">
+                           <div id="menu">
+                                <?php print render($page['header']); ?> 
+                           </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div> <!-- /#header -->
 
-    <div id="header"><div><div>
-  <div id="logo">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" >
-        <img src="/sites/all/themes/cameron/assets/images/logo.png" alt="Cameron Collision" />
-      </a>
-  </div>
-  <div id="header_right">
-    
-   <div id="menu">
-       <?php print render($page['header']); ?> 
-
-   </div>
-
-   </div>
- 
-  </div>
-    </div></div></div> <!-- /#header -->
-
-    <div id="main-wrapper"><div><div>
-       <div id="banner" align="center">
-             <?php print render($page['banner']); ?> 
-</div>
-      <a id="main-content"></a>
+        <div id="main-wrapper">
+            <div>
+                <div>
+                    <div id="banner" align="center">
+                        <?php print render($page['banner']); ?> 
+                    </div>
+                    <a id="main-content"> </a>
       
-      <div id="black1"><div><div>
-        <?php print render($title_prefix); ?>
-        <?php print render($title_suffix); ?>
-        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-        <?php print $messages; ?>  
-        <?php print render($page['help']); ?>
-        <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php print render($page['black1']); ?>
+                    <div id="black1">
+                            <div>
+                                <div>
+                                    <?php print render($title_prefix); ?>
+                                    <?php print render($title_suffix); ?>
+                                    <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+                                    <?php print render($page['help']); ?>
+                                    <?php print $messages; ?>
+                                    <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+                                    <?php print render($page['black1']); ?>
+                                </div>
+                            </div>
+                    </div> <!-- /#black1 -->
 
-      </div></div></div> <!-- /#black1 -->
+                    <?php if ($page['red1']){?>
+                        <div id="red1">
+                            <div>
+                                <div>
+                                    <?php print render($page['red1']); ?>
+                                </div>
+                            </div>
+                        </div> <!-- /#red1 -->
+                    <?php }?>
 
-  <?php if ($page['red1']){?>
-      <div id="red1"><div><div>
-        
-         <?php print render($page['red1']); ?>
-      </div></div></div> <!-- /#red1 -->
-<?php }?>
-      <div id="black2"><div><div>
-        <?php print render($page['black2']); ?>
-      </div></div></div> <!-- /#black2 -->
+                    <div id="black2">
+                        <div>
+                            <div>
+                                 <?php print render($page['black2']); ?>
+                            </div>
+                        </div>
+                    </div> <!-- /#black2 -->
 
-      <div id="red2"><div><div>
-        <?php print render($page['red2']); ?>
-      </div></div></div> <!-- /#red2 -->
-    </div></div></div> <!-- /#main, /#main-wrapper -->
+                    <div id="red2">
+                        <div>
+                            <div>
+                                 <?php print render($page['red2']); ?>
+                            </div>
+                        </div>
+                    </div> <!-- /#red2 -->
+                 </div>
+             </div>
+        </div> <!-- /#main-wrapper -->
 
 
-    <div id="footer1"><div><div>
-        <div class="arrow-left"></div>
-      <?php print render($page['footer1']); ?>
-      <div class="arrow-right"></div>
-    </div></div></div> <!-- /#footer1 -->
+    <div id="footer1">
+        <div>
+            <div>
+                    <?php print render($page['footer1']); ?>
+            </div>
+        </div>
+    </div> <!-- /#footer1 -->
 
-    <div id="footer2"><div><div>
-      
-      <div id="footer_container">
-                          <div id="left_bottom_footer" >
-                                <a href="/"><img src="/sites/all/themes/cameron/assets/images/footer_logo.png"></a>
-                                <br>
-                          </div>
+        <div id="footer2">
+            <div>
+                <div>
+                    <div id="footer_container">
+                        <div id="left_bottom_footer" >
+                            <a href="/"><img src="/sites/all/themes/cameron/assets/images/footer_logo.png"></a>
+                        </div>
                                         
-                           <div id="middle_bottom_footer">
-                                <div><img src="/sites/all/themes/cameron/assets/images/aqua.png"></div>
-                                <div><img src="/sites/all/themes/cameron/assets/images/I-car.png"></div>
-                                <div><img src="/sites/all/themes/cameron/assets/images/I-car-platinum.png"></div>
-                                <div><img src="/sites/all/themes/cameron/assets/images/aud.png"></div>
-                                <div><img src="/sites/all/themes/cameron/assets/images/cfib.png"></div>
-                                <div><img src="/sites/all/themes/cameron/assets/images/ciia.png"></div>
-                         </div>
-                <div id="right_bottom_footer">
-                                    <?php print render($page['footer2']); ?>
-                                     <div id="fb_logo">
-                                    <a href="https://www.facebook.com/pages/Cameron-Collision/266800656790290" target="_blank"><img src="sites/all/themes/cameron/assets/images/fb_h.png"></a>
-                                  
-                                  </div>
-                                    <div id="payment_logo">
-                                    <img src="sites/all/themes/cameron/assets/images/master.png">
-                                    <img src="/sites/all/themes/cameron/assets/images/visa.png">
-                                  </div>
-                                  </div>
+                        <div id="middle_bottom_footer">
                          
-      <div id="site-by-cci">Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></div>
-    </div></div></div> <!-- /#footer -->
+                            <?php print render($page['footer2']); ?>
+                        <div id="pay-fb">
+                            <div id="payment_logo">
+                                <img src="/sites/all/themes/cameron/assets/images/master.png">
+                                <img src="/sites/all/themes/cameron/assets/images/visa.png">
+                            </div>
+                            <div id="fb_logo">
+                                 <a href="https://www.facebook.com/pages/Cameron-Collision/266800656790290" target="_blank"><img src="/sites/all/themes/cameron/assets/images/fb_h.png"></a> 
+                            </div>
+                        </div>
+                        </div>
 
-
-  </div></div></div> <!-- /#page-wrapper -->
+                        <div id="site-by-cci">
+                            Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a>
+                        </div>
+                     </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div> <!-- /#page-wrapper -->

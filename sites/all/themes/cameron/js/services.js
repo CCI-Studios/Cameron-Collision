@@ -1,19 +1,15 @@
 (function($){
 	$(function(){
-		
 		$(".read-more a").click(toggleReadMore);
 		$(".read-less a").click(toggleReadMore);
 		$("#block-views-list-view-block-body .service-title").click(toggleReadMore);
 	 
 	});
 
-
     function dis()
-	{ 
-         
+	{
         $(this).parents(".views-row").find(".read-more a").toggleClass("display");
-         return false;
-
+        return false;
 	}
 	function toggleReadMore()
 	{   
@@ -23,21 +19,15 @@
 
 	function replace()
 	{   
-		//$(this).hide();
 		$(this).parents(".views-row").find(".read-less").css("display","block");
-
 		return false;
 	}
 	function hide()
-	{   
-		//$(this).hide();
+	{
 		$(this).css("display","none");
 		$(this).parents(".views-row").find(".views-field-body").slideUp();	
 		$(this).parents(".views-row").find(".read-more a").css("display","block");
-
 		return false;
 	}
-
-
+	
 })(jQuery);
-

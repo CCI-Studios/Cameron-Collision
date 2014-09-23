@@ -5,6 +5,7 @@ core=7.x
 ; css
 stylesheets[all][]=assets/css/screen.css
 
+scripts[] = js/tabs.js
 scripts[] = js/services.js
 scripts[] = js/menu-btn.js
 scripts[] = js/image-scroller.js

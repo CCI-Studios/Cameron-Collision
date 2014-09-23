@@ -6,8 +6,8 @@
 
 	$(function()
 	{
-		$("#prev").click(clickPrevious);
-		$("#next").click(clickNext);
+		$(".prev").click(clickPrevious);
+		$(".next").click(clickNext);
 
 		max = rows().length;
 
