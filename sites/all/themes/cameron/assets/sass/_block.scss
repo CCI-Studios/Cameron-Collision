@@ -636,6 +636,7 @@
         .views-field.views-field-field-team-image
         {
             -webkit-transform: skewX(10deg);
+            -moz-transform: skewX(10deg);
             -ms-transform: skewX(10deg);
             transform: skewX(10deg);
             overflow: hidden;
@@ -654,7 +655,9 @@
             img
             {
                 -webkit-transform: skewX(-10deg);
+                -moz-transform: skewX(-10deg);
                 -ms-transform: skewX(-10deg);
+                transform: skewX(-10deg);
                 display: block;
                 position: relative;
                 margin-left: -42px;
