@@ -6,5 +6,6 @@
 	function toggleMenu()
 	{
 		$("#block-system-main-menu").slideToggle();
+		return false;
 	}
 }(jQuery));

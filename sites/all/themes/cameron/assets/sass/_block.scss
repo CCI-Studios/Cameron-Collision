@@ -68,10 +68,7 @@
     padding-top: 35px;
     padding-bottom: 25px;
     margin-bottom: -1px;
-    background:url("../images/commited.png");
     background-color:$red;
-    background-repeat:no-repeat;
-    background-position: right bottom;
 
     h2
     {
@@ -179,9 +176,6 @@
   
 #node-10
 {
-    background: url("../images/car.png"),url("../images/commited.png");
-    background-position: right top, right bottom;
-    background-repeat: no-repeat, no-repeat;
     color: white;
 
     .content
@@ -1015,7 +1009,7 @@ div .field-type-text-with-summary
     float: left;
     z-index:1;
     height: 374px;
-    width: 440px;
+    width: 33.333%;
     background:$red;
     background-size:60%;
     background-position:left bottom;
@@ -1071,7 +1065,7 @@ div .field-type-text-with-summary
 #block-block-7
 {
     float: right;
-    width: 34%;
+    width: 33.333%;
     height: 374px;
     background-image: url("../images/red_back_2.png");
 
@@ -1122,7 +1116,7 @@ div .field-type-text-with-summary
 #block-block-8
 {
     float: left;
-    width: 360px;
+    width: 33.333%;
     height: 374px;
 
     p
@@ -1143,7 +1137,7 @@ div .field-type-text-with-summary
     right: 33px;
     clear: both;
     height: 340px;
-    width: 440px;
+    width: 33.333%;
     overflow: hidden;
     -webkit-transform: skewX(-10deg);
     transform: skewX(-10deg);
@@ -1186,7 +1180,7 @@ div .field-type-text-with-summary
 #block-block-11
 {
     float: left;
-    width: 30%;
+    width: 33.333%;
     height: 289px;
     position: relative;
     z-index: 1;
@@ -1447,7 +1441,8 @@ div .field-type-text-with-summary
             &:hover
             {
              background-image: url("../images/appointment-hover.png");  
-             margin-left: 2px; 
+             margin-left: 2px;
+             margin-right: -2px;
             }
         }
 
@@ -1565,6 +1560,8 @@ div .field-type-text-with-summary
     .view-content
     {
         -webkit-column-count:2;
+        -moz-column-count:2;
+        column-count:2;
     } 
     .service-title
     {

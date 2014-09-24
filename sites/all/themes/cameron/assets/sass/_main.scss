@@ -1,10 +1,7 @@
 body
 {
 	color: white;
-	background:url("../images/pavement.jpg") repeat;
-	font-family: "futura-pt",sans-serif;
-	font-weight:700;
-	line-height: 1;
+	background:black;
 }
 
 p
@@ -73,6 +70,11 @@ a:visited
 	@extend .layout-center;
 	position: relative;
 }
+#black1,
+#black2
+{
+	background:url("../images/pavement.jpg") repeat
+}
 
 #header
 {
@@ -110,13 +112,27 @@ a:visited
 #menu
 {
 	width: 100%;
-
-	a
+	
+	li
 	{
-		color: $gold;
+		margin:0 -4px 0 0;
+		padding: 0;
+		
+		a
+		{
+			color: $gold;
+			display: block;
+			padding: 2px 5px;
+			margin-left:5px;
+			
+			&:hover
+			{
+				margin-bottom: -2px;
+			}
+		}
 	}
 
-	li.first.leaf
+	a.appointment
 	{
 		display: none;
 	}
@@ -153,14 +169,9 @@ a:visited
 
 #footer1
 {
-	background-image: url("../images/vehicle_repair.png");
-	height: 141px;
-	padding-top: 60px;
+	height: 200px;
 	clear: both;
-	background-position-x: 50%;
-	background-position-y: 30px;
 	border-bottom: 4px solid $gold;
-	background-repeat: no-repeat;
 	background-color: #d7d7d7;
 	border-top:4px solid $gold;
 	box-shadow: 0px -1px 8px rgba(0,0,0, 0.5) inset;
@@ -268,9 +279,6 @@ a:visited
 
 .node
 {
-	background: url("../images/car.png"), url("../images/commited.png");
-	background-position: right top, right bottom;
-	background-repeat: no-repeat, no-repeat;
 	width: 100%;
 
 	&.node-team-member

@@ -1,77 +1,84 @@
 .view-image-scroller
 {
-	
-		position:relative;
-		width:100%;
-		overflow:hidden;
-		font-weight:600;
-		line-height: 135px;
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	font-weight:600;
+	line-height: 135px;
 
-		.view-content
-		{
-			position:relative;
-		}
-        .view-header .prev,
-	    .view-footer .next
+	.view-content
+	{
+		position:relative;
+	}
+    .view-header .prev,
+    .view-footer .next
 	{
 		position:absolute;
 		z-index:1;
 		top:50%;
-		margin-top:-30px;
+		margin-top:20px;
 		cursor:pointer;
 	}
 	.view-footer .next
 	{
 		right:0;
 	}
+	.view-header,
+	.view-footer
+	{
+		float: none;
+	}
+	.view-header h2 a
+	{
+		display: block;
+		font-size:0;
+		color:transparent;
+		height: 60px;
+		background:url(../images/vehicle_repair.png) no-repeat center center;
+		margin-top: 10px;
+	}
          
-		.views-row
+	.views-row
+	{
+		position:relative;
+		float:left;
+		width:30%;
+		text-align: center;
+		color:white;
+		text-shadow:1px 1px 2px black;
+		&:hover .views-field-title
 		{
-			position:relative;
-			float:left;
-			width:30%;
-			text-align: center;
-			color:white;
-			text-shadow:1px 1px 2px black;
-			&:hover
-		{
-			.views-field-title
-			{
-				display: block;
-			}
+			display: block;
 		}
 
-			.views-field-field-image img
-			{
-				position:absolute;
-				top:0;
-				left:0;
-				z-index:0;
-				width:100%;
-				height:auto;
-
-			}
-			.views-field-field-image-scroll img
-			{
-				vertical-align: middle;
-				height: 50%;
-			}
-		   .views-field-title
-			{
-				display: none;
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				background: #404040;
-				background: rgba(0,0,0,0.5);
-				color: white;
-				font-size: 24px;
-				padding-right:0px;
-			}
-
+		.views-field-field-image img
+		{
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:0;
+			width:100%;
+			height:auto;
 		}
-	
+		.views-field-field-image-scroll img
+		{
+			vertical-align: middle;
+			height: 50%;
+		}
+		.views-field-title
+		{
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: #404040;
+			background: rgba(0,0,0,0.5);
+			color: white;
+			font-size: 24px;
+			padding-right:0px;
+		}
+	}
 }
 
 .view-service-images-view

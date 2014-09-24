@@ -144,7 +144,6 @@
     {
         width: 49%;
         left: 51%;
-        z-index: -1; 
     }
 
     #block-block-37
@@ -720,11 +719,6 @@
     {
         background-size:330px;
         margin-left: -10px;
-    }
-
-    #block-system-main-menu li.first-leaf
-    {
-        display: none;
     }
 
     #webform-component-message label
@@ -1634,7 +1628,7 @@
         right: 0;
         z-index: 9999;
         background:$red;
-        padding-top:0;
+        padding:0;
 
         ul.menu
         {
@@ -1652,7 +1646,7 @@
         {
             display: block;
             width: 100%;
-            margin-left: 0;
+            margin: 0;
             line-height: 33px;
             height: 33px;
             border-bottom: 3px solid;
@@ -1661,6 +1655,8 @@
             a
             {
                  display: block;
+                 padding: 0 8px;
+                 margin: 0;
             } 
         }
 
@@ -1700,15 +1696,6 @@
     #menu
     {
         width:100%;
-    }
-
-    #block-system-main-menu
-    {
-        display: none;
-        position: absolute;
-        padding-right: 8px;
-        right: 0;
-        background:$red;
     }
 
 
@@ -1988,7 +1975,11 @@
         border-bottom:4px solid $gold;
     }
 
-    
+    .committed,
+    .smashedcars
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-width:1023px) and (min-width:768px)
@@ -2272,25 +2263,13 @@
   
     #block-system-main-menu 
     {
-        display: none;
-        position: absolute;
-        width: 54%;
-        padding-right: 0;
-        right: 0;
-        background: $red;
-        z-index: 99999;
-        padding-top:0;
 
         li
         {
             display: block;
-            width: 90%;
-            padding-right:10%;
 
             a
             {
-                color: $gold;
-                display: block;
 
                 &:hover
                 {
@@ -2341,19 +2320,6 @@
         width:100%;
         position: relative;
         overflow: hidden;
-    }
-
-    #footer1
-    {
-        display:block;
-        width:100%;
-        background-image:none;
-        background-image:url("../images/vehicle-mobile.png");
-        border-bottom:3px solid black;
-        background-repeat:no-repeat;
-        margin: 0;
-        padding-top:60px;
-        border-bottom:4px solid $gold;
     }
 
     #footer2
